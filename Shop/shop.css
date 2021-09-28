@@ -153,7 +153,7 @@ button {
   filter: brightness(150%);
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 786px) {
   ul a {
     text-decoration: none;
     color: white;
@@ -174,20 +174,5 @@ button {
     margin-left: 120px;
     color: white;
     font-size: large;
-  }
-}
-@media only screen and (min-width: 420px) {
-  #btnSum {
-    text-align: center;
-    background-color: red;
-    width: 50%;
-    margin-left: 120px;
-    color: white;
-    font-size: large;
-  }
-  ul a {
-    text-decoration: none;
-    color: white;
-    font-size: medium;
   }
 }
