@@ -4,23 +4,23 @@ function showCart() {
    <td> <img src= "${cart[i].img}"</td>  
    <td>${cart[i].amount}</td>  
    <td>${cart[i].price}</td>  
-   <td><button onclick="ClearProducts(${i})">clear </button> </td> `;
+   <td><button onclick="ClearProductsFromCart(${i})">clear </button> </td> `;
   }
 }
 showCart();
 console.log(cart);
 
-function ClearProducts(index) {
+function ClearProductsFromCart(index) {
   cart.splice(index, 1);
   console.log(cart)
   table.innerHTML=''
   showCart()
-  sumAllPrice()
+  sumAllPriceInTheCart()
 }
 
 
 
-function sumAllPrice() {
+function sumAllPriceInTheCart() {
   var total = 0;
   for (let i = 0; i < cart.length; i++) {
     total += cart[i].price;
@@ -29,7 +29,7 @@ function sumAllPrice() {
   }
   return total;
 }
-sumAllPrice();
+sumAllPriceInTheCart();
 
 
 
