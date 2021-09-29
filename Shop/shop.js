@@ -31,6 +31,13 @@ function sumAllPrice() {
 }
 sumAllPrice();
 
+
+
+
+
+
+
+
 //form
 
 Form.onsubmit = (event) => {
